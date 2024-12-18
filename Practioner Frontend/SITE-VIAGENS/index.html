@@ -31,6 +31,7 @@
             <a href="https://br.lipsum.com/feed/html">link ipsum</a>
             <hr>
         </p>
+        <!-- figure: para ilustrar imagens de forma mais organizada semânticamente -->
         <figure>
             <img src="./img/gramado.jpg" width="700" height="400" alt="imagem de uma praça em gramado">
         </figure>
@@ -40,12 +41,14 @@
         <figure>
             <img src="./img/JoaoPessoa.jpg" width="700" height="400" alt="imagem das praias de João Pessoa">
         </figure>
+        <!-- video: exibit video na página -->
         <video controls width="600px" height=" 400px">
             <source src="video/Viagem-pelo-mundo.mp4" type="video/mp4">
             <source src="video/Viagem-pelo-mundo.webm" type="video/webm">
         </video>
         <h2>Orçamento</h2>
         <form method="GET" action="">
+            <!-- fieldset: Grupo de campos, servem para organizar melhor os inputs de usuários -->
             <fieldset>
                 <legend>Dados da viagem</legend>
                 <label>Nome</label><br>
@@ -75,6 +78,28 @@
                 <label>
                     <br><input type="checkbox" name="veiculos" value="Veículos">Reserva de veículos
                 </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Escolha a forma de pagamento</legend>
+                <label>
+                    <br><input type="radio" name="formaPagamento" value="cartao-de-credito">Cartão de crédito
+                </label>
+                <label>
+                    <br><input type="radio" name="formaPagamento" value="boleto">Boleto
+                </label>
+                <label>
+                    <br><input type="radio" name="formaPagamento" value="pix">Pix
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Escolha o prazo para pagamento</legend>
+                <select name="prazoPagamento">
+                    <option value="aVista">Á vista</option>
+                    <option value="5x">5x sem juros</option>
+                    <option value="10x">10x com juros</option>
+                </select>
             </fieldset>
 
             <label>Comentário</label><br>
